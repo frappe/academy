@@ -63,10 +63,35 @@
 	.main-illustration {
 		margin: -60px 0 -20px -16px;
 	}
+
 	.hero-title {
 		font-size: 26px;
 	}
-	.hero-title + p {
+
+	.hero-title+p {
 		font-size: 16px;
 	}
+}
+
+
+.modal-dialog {
+	max-width: 800px;
+	margin: 30px auto;
+}
+
+.modal-body {
+	position: relative;
+	padding: 0px;
+	background-color: black;
+}
+
+.close {
+	position: absolute;
+	right: -30px;
+	top: 0;
+	z-index: 999;
+	font-size: 2rem;
+	font-weight: normal;
+	color: #fff;
+	opacity: 1;
 }
