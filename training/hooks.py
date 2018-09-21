@@ -11,10 +11,6 @@ app_color = "grey"
 app_email = "info@frappe.io"
 app_license = "MIT"
 
-role_home_page = {
-    "Training Subscriber": "course"
-}
-
 # Includes in <head>
 # ------------------
 
