@@ -1,6 +1,5 @@
 {
     "js/academy.min.js": [
-        "public/js/academy.js",
-        "node_modules/vue/dist/vue.js"
+        "public/js/academy.js"
     ]
 }

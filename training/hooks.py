@@ -15,9 +15,9 @@ website_context = {
 	"brand_html": "<img class='mr-2 d-inline-block align-top' src='/assets/training/img/erpnext-logo-blue.svg' />ERPNext Academy",
 	"top_bar_items": [
 		{"label": "Classrooms", "right":1, "child_items": [
-			{"label": "ERPNext Expert", "url":"/courses"},
-			{"label": "ERPNext Developer", "url":"/courses"},
-			{"label": "ERPNext Implementer", "url":"/courses"},
+			{"label": "ERPNext Expert", "url":"/classrooms/expert-user"},
+			{"label": "ERPNext Developer", "url":"/classrooms"},
+			{"label": "ERPNext Implementer", "url":"/classrooms"},
 		]},
 		{"label": "Enroll", "url": "/enroll", "right":1},
 		{"label": "About", "url": "/about", "right":1},

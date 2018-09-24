@@ -5,3 +5,9 @@
     -ms-user-select: none; /* IE 10+ */
     user-select: none; /* Standard syntax */
 }
+
+@media (max-width: 767px) {
+    .module-details {
+        margin-bottom: 1rem !important;
+    }
+}
