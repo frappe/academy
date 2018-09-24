@@ -11,6 +11,30 @@ app_color = "grey"
 app_email = "info@frappe.io"
 app_license = "MIT"
 
+website_context = {
+	"brand_html": "<img class='mr-2 d-inline-block align-top' src='/assets/training/img/erpnext-logo-blue.svg' />ERPNext Academy",
+	"top_bar_items": [
+		{"label": "Classrooms", "right":1, "child_items": [
+			{"label": "ERPNext Expert", "url":"/courses"},
+			{"label": "ERPNext Developer", "url":"/courses"},
+			{"label": "ERPNext Implementer", "url":"/courses"},
+		]},
+		{"label": "Enroll", "url": "/enroll", "right":1},
+		{"label": "About", "url": "/about", "right":1},
+        # {"label": "Login", "url": "/login", "right":1},
+	],
+	"hide_login": 1,
+	"favicon": "/assets/training/img/erpnext-logo-blue.png"
+}
+
+website_redirects = [
+	{'source': '/blog', 'target': 'https://frappe.io/blog' },
+	{'source': '/about', 'target': 'https://erpnext.com/about' },
+	{'source': '/features', 'target': '/learn' },
+	{'source': '/download', 'target': 'https://erpnext.org/get-started' },
+	{'source': '/faq', 'target': 'https://erpnext.org/faq' },
+	{'source': '/open-source', 'target': 'https://erpnext.org/open-source' },
+]
 # Includes in <head>
 # ------------------
 
