@@ -5,19 +5,19 @@ import re, ast
 with open('requirements.txt') as f:
 	install_requires = f.read().strip().split('\n')
 
-# get version from __version__ variable in training/__init__.py
+# get version from __version__ variable in academy/__init__.py
 _version_re = re.compile(r'__version__\s+=\s+(.*)')
 
-with open('training/__init__.py', 'rb') as f:
+with open('academy/__init__.py', 'rb') as f:
 	version = str(ast.literal_eval(_version_re.search(
 		f.read().decode('utf-8')).group(1)))
 
 setup(
-	name='training',
+	name='academy',
 	version=version,
-	description='ERPNext Training App',
+	description='ERPNext Training Platform',
 	author='Frappe',
-	author_email='info@frappe.io',
+	author_email='info@frappe.com',
 	packages=find_packages(),
 	zip_safe=False,
 	include_package_data=True,

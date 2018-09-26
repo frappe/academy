@@ -4,15 +4,15 @@ include *.json
 include *.md
 include *.py
 include *.txt
-recursive-include training *.css
-recursive-include training *.csv
-recursive-include training *.html
-recursive-include training *.ico
-recursive-include training *.js
-recursive-include training *.json
-recursive-include training *.md
-recursive-include training *.png
-recursive-include training *.py
-recursive-include training *.svg
-recursive-include training *.txt
-recursive-exclude training *.pyc
+recursive-include academy *.css
+recursive-include academy *.csv
+recursive-include academy *.html
+recursive-include academy *.ico
+recursive-include academy *.js
+recursive-include academy *.json
+recursive-include academy *.md
+recursive-include academy *.png
+recursive-include academy *.py
+recursive-include academy *.svg
+recursive-include academy *.txt
+recursive-exclude academy *.pyc

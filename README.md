@@ -1,6 +1,6 @@
-## Training
+## Academy
 
-ERPNext Training App
+ERPNext Training Platform
 
 #### License
 
