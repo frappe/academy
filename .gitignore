@@ -4,3 +4,4 @@
 *.swp
 tags
 academy/docs/current
+.vscode/*
