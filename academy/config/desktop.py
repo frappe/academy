@@ -7,7 +7,7 @@ def get_data():
 		{
 			"module_name": "Academy",
 			"color": "grey",
-			"icon": "octicon-book",
+			"icon": "octicon octicon-book",
 			"type": "module",
 			"label": _("Academy")
 		}
