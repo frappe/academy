@@ -35,6 +35,14 @@ website_redirects = [
 	{'source': '/faq', 'target': 'https://erpnext.org/faq' },
 	{'source': '/open-source', 'target': 'https://erpnext.org/open-source' },
 ]
+
+# Generators
+# ----------
+
+# automatically create page for each record of this doctype
+website_generators = ["Classroom"]
+
+
 # Includes in <head>
 # ------------------
 
@@ -69,11 +77,6 @@ website_redirects = [
 # Website user home page (by function)
 # get_website_user_home_page = "academy.utils.get_home_page"
 
-# Generators
-# ----------
-
-# automatically create page for each record of this doctype
-# website_generators = ["Web Page"]
 
 # Installation
 # ------------

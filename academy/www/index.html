@@ -8,6 +8,25 @@
 <meta name="keywords" content="ERP Software, Cloud ERP, Open Source ERP, Accounting Software, Online ERP, Online Accounting, ERP for small business, Learn ERP, ERPNext Academy, Learn ERPNext, Learn Accounting" />
 {% endblock %}
 
+{% macro featured_card(class_name, short_description, intro_video, hero_image, route) %}
+<div class='card-deck mt-5'>
+	<div class="card">
+		<img src="{{ hero_image }}" style='height: 150px'>
+		<div class='card-body'>
+			<a href="/{{ route }}/">
+				<h5 class='card-title'>{{ class_name }}</h5>
+			</a>
+			<div>{{ short_description }}</div>
+		</div>
+		<div class='card-footer text-right'>
+			<a class='video-btn btn btn-secondary btn-sm' data-toggle="modal" data-src="{{ intro_video }}" data-target="#myModal">Watch
+				Intro</a>&nbsp;&nbsp;
+			<a class='btn btn-secondary btn-sm' href="/enroll?course=user">Enroll Now</a>
+		</div>
+	</div>
+</div>
+{% endmacro %}
+
 {% block content %}
 <section class='top-section'>
 	<div class='container'>
@@ -17,8 +36,9 @@
 		</div>
 		<h1>Become an ERPNext Expert</h1>
 		<ul class="list-group">
-			  </ul>
-		<p class='lead'>A platform for enterpreneurs, developers and implementors to learn the world's leading 100% Open
+		</ul>
+		<p class='lead'>
+			A platform for enterpreneurs, developers and implementors to learn the world's leading 100% Open
 			Source ERP</p>
 		<p class="mt-4">
 			<a class="btn btn-primary btn-lg" href="/enroll">
@@ -30,21 +50,9 @@
 	<div class='container'>
 		<h3 class='text-center'>Featured Classroom</h3>
 		<p class='lead text-center'>Master ERPNext with our Expert Learning Paths</p>
-		<div class='card-deck mt-5'>
-			<div class="card">
-				<img src="/assets/academy/img/expert.png" style='height: 150px'>
-				<div class='card-body'>
-					<a href="/classrooms/expert-user/"><h5 class='card-title'>ERPNext Expert User</h5></a>
-					<div>Learning paths specifically designed for the your use cases, whether you are a user, developer or an
-						implementer</div>
-				</div>
-				<div class='card-footer text-right'>
-					<a class='video-btn btn btn-secondary btn-sm' data-toggle="modal" data-src="SzQPlye71VI"
-					 data-target="#myModal">Watch Intro</a>&nbsp;&nbsp;
-					<a class='btn btn-secondary btn-sm' href="/enroll?course=user">Enroll Now</a>
-				</div>
-			</div>
-		</div>
+		{% for class in featured %}
+			{{ featured_card(class.class_name, class.short_description, class.intro_video, class.hero_image, class.route) }}
+		{% endfor %}
 		<div class='mt-4 text-center'>
 			<a class="btn btn-primary btn-lg" href="/classrooms">View All</a>
 		</div>
@@ -94,23 +102,23 @@
 	</div>
 </section>
 <div class="container">
-		<!-- Modal -->
-		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-body">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-						<!-- 16:9 aspect ratio -->
-						<div class="embed-responsive embed-responsive-16by9">
-							<iframe id="ytplayer" type="text/html" class="embed-responsive-item" allowscriptaccess="always"></iframe>
-						</div>
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<!-- 16:9 aspect ratio -->
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe id="ytplayer" type="text/html" class="embed-responsive-item" allowscriptaccess="always"></iframe>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+</div>
 <style>
 	.footer-message {
 		display: none;
@@ -118,4 +126,3 @@
 </style>
 
 {% endblock %}
-
