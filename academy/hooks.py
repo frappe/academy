@@ -15,7 +15,7 @@ website_context = {
 	"brand_html": "<img class='mr-2 d-inline-block align-top' src='/assets/academy/img/erpnext-logo-blue.svg' />ERPNext Academy",
 	"top_bar_items": [
 		{"label": "Classrooms", "right":1, "child_items": [
-			{"label": "ERPNext Expert", "url":"/classrooms/expert-user"},
+			{"label": "ERPNext Expert", "url":"/classrooms?c=erpnext-expert-user"},
 			{"label": "ERPNext Developer", "url":"/classrooms"},
 			{"label": "ERPNext Implementer", "url":"/classrooms"},
 		]},
@@ -40,7 +40,7 @@ website_redirects = [
 # ----------
 
 # automatically create page for each record of this doctype
-website_generators = ["Classroom"]
+# website_generators = ["Classroom"]
 
 
 # Includes in <head>
