@@ -1,0 +1,119 @@
+{% extends "frappe_theme/templates/base.html" %}
+{% block title %}ERPNext Academy{% endblock %}
+
+{% block head_include %}
+<meta name="description" content="ERPNext Academy is a learnig platform to gain expertise in the world's top 100% open source ERP software." />
+<meta name="keywords" content="ERP Software, Cloud ERP, Open Source ERP, Accounting Software, Online ERP, Online Accounting, ERP for small business, Learn ERP, ERPNext Academy, Learn ERPNext, Learn Accounting" />
+{% endblock %}
+
+{% block content %}
+<section class='top-section'>
+	<div class='container'>
+		<div class='text-center'>
+			<!-- <img class="main-illustration" src='/assets/academy/img/expert.png' style='width: 700px;'> -->
+		</div>
+		<h1>Our Classrooms</h1>
+		<p class='lead'>A platform for enterpreneurs, developers and implementors to learn the world's leading 100% Open
+			Source ERP</p>
+		<p class="mt-4">
+			<a class="btn btn-primary btn-lg" href="/enroll">
+				Enroll Now</a>
+		</p>
+</section>
+
+<section class='section-padding section-bg'>
+	<div class='container'>
+		<h3 class='text-center'>Featured Classroom</h3>
+		<p class='lead text-center'>Master ERPNext with our Expert Learning Paths</p>
+		<div class='card-deck mt-5'>
+			<div class="card">
+				<img class='' src="/assets/academy/img/expert.png" style='height: 150px'>
+				<div class='card-body'>
+					<a href="/classrooms/expert-user/"><h5 class='card-title'>ERPNext Expert User</h5></a>
+					<div>Learning paths specifically designed for the your use cases, whether you are a user, developer or an
+						implementer</div>
+				</div>
+				<div class='card-footer text-right'>
+					<a class='video-btn btn btn-secondary btn-sm' data-toggle="modal" data-src="SzQPlye71VI"
+					 data-target="#myModal">Watch Intro</a>&nbsp;&nbsp;
+					<a class='btn btn-secondary btn-sm' href="/enroll?course=user">Enroll Now</a>
+				</div>
+			</div>
+		</div>
+		<div class='mt-4 text-center'>
+			<a class="btn btn-primary btn-lg" href="/classrooms">View All</a>
+		</div>
+	</div>
+</section>
+
+<section class="section-padding">
+	<div class='container'>
+		<h3 class='text-center'>Highlights</h3>
+		<div class='card-deck mt-5'>
+			<div class="card">
+				<!-- <img class='mt-3' src="/assets/erpnext_com/img/balloon.svg" style='height: 150px'> -->
+				<div class='card-body'>
+					<h5 class='card-title'>Curated Courses</h5>
+					<div>Learning paths specifically designed for the your use cases, whether you are a user, developer or an
+						implementer</div>
+				</div>
+				<div class='card-footer'>
+					<a href="#" class='text-muted small'>Explore Learning Paths</a>
+				</div>
+			</div>
+
+			<div class="card">
+				<!-- <img class='mt-3' src="/assets/erpnext_com/img/umbrella.svg" style='height: 150px'> -->
+				<div class='card-body'>
+					<h5 class='card-title'>Comprehensive Content</h5>
+					<div>Content designed to cover all the fundamentals as well as expert tips and techniques to make the most out of
+						ERPNext.</div>
+				</div>
+				<div class='card-footer'>
+					<a href="#" class='text-muted small'>View Course List</a>
+				</div>
+			</div>
+
+			<div class="card">
+				<!-- <img class='mt-3' src="/assets/erpnext_com/img/sun.svg" style='height: 150px'> -->
+				<div class='card-body'>
+					<h5 class='card-title'>Certification</h5>
+					<div>ERPNext is open source and infinitely extensible. Customize it, build upon it, add your own apps built with
+						<a href="https://frappe.io" class="underline">Frappe Framework</a>.</div>
+				</div>
+				<div class='card-footer'>
+					<a href="#" class='text-muted small'>Certification Benefits</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<div class="container">
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-body">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<!-- 16:9 aspect ratio -->
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe id="ytplayer" type="text/html" class="embed-responsive-item" allowscriptaccess="always"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<style>
+	.footer-message {
+		display: none;
+	}
+	.video-btn {
+		color: white !important;
+	}
+</style>
+
+{% endblock %}
+

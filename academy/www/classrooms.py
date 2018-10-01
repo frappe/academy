@@ -4,16 +4,11 @@ import frappe
 
 # Get the classroom's route parameter from the url
 url_param = frappe.form_dict["c"]
-
-# Get classroom name from the route
-classroom_name = frappe.get_all('Classroom', filters={'route': url_param})[0].name
-
 # Get classroom from classroom_name
-current_classroom = frappe.get_doc("Classroom", classroom_name)
+current_classroom = frappe.get_doc("Classroom", url_param)
 
 def get_context(context):
-    context.test = "test"
-    context.classroom = frappe.get_doc("Classroom", classroom_name)
+    context.classroom = current_classroom
     context.module_list, context.module_data = get_modules()
 
 def get_modules():

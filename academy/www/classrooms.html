@@ -8,47 +8,48 @@
 
 {% macro module_card(name) %}
 <div class="card mt-3" data-list="getting-started">
-        <div class='card-body'>
-            <div class="row">
-                <div class="module-details col-xs-8 col-sm-9 col-md-10">
-                    <h5>{{ name }}</h5>
-                    <span class="module-list text-muted" id="getting-started">
-                        Course Content
-                        <ul class="mb-0 mt-1">
-                            {% for lesson in module_data[name] %}
-                            <li>{{ lesson }}</li>
-                            {% endfor %}
-                        </ul>
-                    </span>
-                </div>
-                <div class='text-center col-xs-4 col-sm-3 col-md-2'>
-                    <a class='btn btn-primary btn-sm btn-block' href="/">Start Module</a>
-                </div>
+    <div class='card-body'>
+        <div class="row">
+            <div class="module-details col-xs-8 col-sm-9 col-md-10">
+                <h5>{{ name }}</h5>
+                <span class="module-list text-muted" id="getting-started">
+                    Course Content
+                    <ul class="mb-0 mt-1">
+                        {% for lesson in module_data[name] %}
+                        <li>{{ lesson }}</li>
+                        {% endfor %}
+                    </ul>
+                </span>
+            </div>
+            <div class='text-center col-xs-4 col-sm-3 col-md-2'>
+                <a class='btn btn-primary btn-sm btn-block' href="learn?module={{name}}&lesson={{ module_data[name][0] }}">Start
+                    Module</a>
             </div>
         </div>
     </div>
+</div>
 {% endmacro %}
 
 {% block content %}
 <section class='top-section'>
-        <div class='container'>
-            <div class='text-center'>
-                <!-- <img class="main-illustration" src='/assets/academy/img/expert.png' style='width: 700px;'> -->
-            </div>
-            <h1>{{ classroom.class_name }}</h1>
-            <p class='lead'>{{ classroom.short_description }}</p>
-            <p class="mt-4">
-                <a class="btn btn-primary btn-lg" href="/classrooms/module">
-                    Continue with Module 2</a>
-            </p>
-    </section>
+    <div class='container'>
+        <div class='text-center'>
+            <!-- <img class="main-illustration" src='/assets/academy/img/expert.png' style='width: 700px;'> -->
+        </div>
+        <h1>{{ classroom.class_name }}</h1>
+        <p class='lead'>{{ classroom.short_description }}</p>
+        <p class="mt-4">
+            <a class="btn btn-primary btn-lg" href="/classrooms/module">
+                Continue with Module 2</a>
+        </p>
+</section>
 
 <section class='section-padding section-bg'>
     <div class='container'>
         <h3 class='text-center'>Modules</h3>
         <p class='lead text-center'>Master ERPNext with our Expert Learning Paths</p>
         {% for module_item in module_list %}
-            {{ module_card(module_item) }}
+        {{ module_card(module_item) }}
         {% endfor %}
     </div>
 </section>
