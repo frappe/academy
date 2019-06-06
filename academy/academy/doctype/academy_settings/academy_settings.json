@@ -1,0 +1,61 @@
+{
+ "creation": "2019-06-06 19:45:21.509401",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "heading",
+  "subtitle",
+  "column_break_3",
+  "featured_program"
+ ],
+ "fields": [
+  {
+   "fieldname": "heading",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Heading",
+   "reqd": 1
+  },
+  {
+   "fieldname": "subtitle",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Subtitle",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "featured_program",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Featured Program",
+   "options": "Program",
+   "reqd": 1
+  }
+ ],
+ "issingle": 1,
+ "modified": "2019-06-06 19:45:21.509401",
+ "modified_by": "Administrator",
+ "module": "Academy",
+ "name": "Academy Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "ASC",
+ "track_changes": 1
+}

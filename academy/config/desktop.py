@@ -6,9 +6,13 @@ def get_data():
 	return [
 		{
 			"module_name": "Academy",
-			"color": "grey",
-			"icon": "octicon octicon-book",
+			"category": "Modules",
+			"label": _("Academy"),
+			"color": "#1abc9c",
+			"icon": "fa fa-check-square-o",
 			"type": "module",
-			"label": _("Academy")
-		}
+			"disable_after_onboard": 1,
+			"description": "Configure ERPNext Academy.",
+			"onboard_present": 0
+		},
 	]

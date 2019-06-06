@@ -16,8 +16,8 @@ app_version = "0.0.1"
 website_context = {
 	"repo": "frappe/academy",
 	"logo_image_url": '/assets/academy/img/erpnext-logo-blue.png',
-	'brand_name': 'ERPNext Academy',
-	"brand_html": "ERPNext Academy",
+	'brand_name': 'Academy',
+	"brand_html": "Academy",
 	"top_bar_items": [
 		{"label": "Discuss", "url": "https://discuss.erpnext.com"},
 		{"label": "ERPNext", "url": "https://erpnext.com"}
@@ -25,8 +25,11 @@ website_context = {
 	"favicon": "/assets/erpnext_com/img/erpnext-logo-blue.png"
 }
 
+website_redirects = [
+	{'source': '/lms', 'target': '/' }
+]
 
-home_page = "/lms"
+home_page = "index"
 # Includes in <head>
 # ------------------
 
