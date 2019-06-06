@@ -22,7 +22,7 @@ website_context = {
 		{"label": "Discuss", "url": "https://discuss.erpnext.com"},
 		{"label": "ERPNext", "url": "https://erpnext.com"}
 	],
-	"favicon": "/assets/erpnext_com/img/erpnext-logo-blue.png"
+	"favicon": "/assets/academy/img/erpnext-logo-blue.png"
 }
 
 website_redirects = [
