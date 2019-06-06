@@ -9,8 +9,8 @@
 {% block content %}
 <section class='top-section'>
 	<div class='container' style='padding-top: 3em; padding-bottom: 3em;'>
-	<h1>{{ academy.heading }}</h1>
-	<p class='lead'>{{ academy.subtitle }}</p>
+	<h1>{{ academy.heading or 'ERPNext Academy'}}</h1>
+	<p class='lead'>{{ academy.subtitle or ''}}</p>
 	<p class="mt-4">
 		<a class="btn btn-primary btn-lg" style="width: 170px;" href="/lms/program?program={{ academy.featured_program }}">Start Learning</a>
 	</p>
